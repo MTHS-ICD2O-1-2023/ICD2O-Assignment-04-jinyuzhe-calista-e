@@ -9,8 +9,8 @@ function calculate() {
     let size = document.getElementById("size").value
     let topping = document.getElementById("topping").value
 
-    let sizePrice = 0
-    let toppingPrice = 0
+    let sizePrice = 0;
+    let toppingPrice = 0;
 
     if (size == "Large") {
         sizePrice = 6.00;
