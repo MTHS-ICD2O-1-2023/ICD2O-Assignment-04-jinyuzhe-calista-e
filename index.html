@@ -31,17 +31,19 @@
       <br />
       <div class="page-content">Choose your dream pizza.</div>
     </div>
-    <p></p>
-    <select name="Size" id="size">
-      <option value="size">Size</option>
+    <form action="#"></form>
+    <label for="size">Choose a size:</label>
+    <select name="size" id="size">
       <option value="large">Large</option>
       <option value="extra large">Extra Large</option>
     </select>
-    <select name="Tooping" id="tooping">
-      <option value="onion">Onion</option>
-      <option value="tomatoes">Tomatoes</option>
-      <option value="ham">Ham</option>
-      <option value="pineapple">Pineapple</option>
+    <br />
+    <label for="topping">Choose toppings:</label>
+    <select name="topping" id="topping">
+      <option value="onion">onion</option>
+      <option value="tomatoes">tomatoes</option>
+      <option value="ham">ham</option>
+      <option value="pineapple">pineapple</option>
     </select>
     <br />
     <br />
@@ -51,9 +53,12 @@
         </button>
         </form>
         <br />
-        <div id="size-container"></div>
-        <div id="tooping-container"></div>
-        <div id="total"></div>
+        <br />
+        <br />
+        <div class="page-conect-answer">
+        <span id="size"></span>
+        <span id="topping"></span>
+        <span id="total"></span>
       </div>
     </main>
   </div>

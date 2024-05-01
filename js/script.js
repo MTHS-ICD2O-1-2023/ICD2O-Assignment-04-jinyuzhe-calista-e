@@ -6,33 +6,33 @@
 "use strict"
 
 function calculate() {
-  let usersize = document.getElementById("size-container").value
-  let usertooping = document.getElementById("tooping-container").value
+  let size = document.getElementById("size").value
+  let topping = document.getElementById("topping").value
 
   let sizePrice = 0
-  let toopingPrice = 0
+  let toppingPrice = 0
 
-  if (usersize == "Large") {
-    sizePrice = 6.00
-  } else if (usersize == "Extra Large") {
-    sizePrice = 10.00
+  if (size == "Large") {
+    sizePrice = 6.00;
+  } else if (size == "Extra Large") {
+    sizePrice = 10.00;
   } else {
-    document.getElementById("size").innerHTML = "Error"
+    document.getElementById("size").innerHTML = "Error";
   }
 
-  if (usertooping == "Onion") {
-    toopingPrice = 1.00
-  } else if (usertooping == "Tomatoes") {
-    toopingPrice = 1.75
-  } else if (usertooping == "Ham") {
-    toopingPrice = 2.50
-  } else if (usertooping == "Pineapple") {
-    toopingPrice = 3.35
+  if (usertopping == "onion") {
+    toppingPrice = 1.00;
+  } else if (usertopping == "tomatoes") {
+    toppingPrice = 1.75;
+  } else if (usertopping == "ham") {
+    toppingPrice = 2.50;
+  } else if (usertopping == "pineapple") {
+    toppingPrice = 3.35;
   }else {
-    document.getElementById("size").innerHTML = "Error"
+    document.getElementById("size").innerHTML = "Error";
   }
 
-  let totalPrice = sizePrice + toopingPrice
+  let totalPrice = ( sizePrice + toppingPrice ) * 0.13 + ( sizePrice + toppingPrice );
 
   document.getElementById("total").innerHTML =
     "Your total will be $" + totalPrice + "! Enjoy your pizza!"
