@@ -6,8 +6,8 @@
 "use strict"
 
 function calculate() {
-    let size = document.getElementById("size").value
-    let topping = document.getElementById("topping").value
+    let size = document.getElementById("size").value;
+    let topping = document.getElementById("topping").value;
 
     let sizePrice = 0;
     let toppingPrice = 0;
