@@ -18,7 +18,7 @@ function calculate() {
         sizePrice = 10.00;
     } else {
         document.getElementById("size").innerHTML = "Error";
-  }
+    }
 
     if (usertopping == "onion") {
         toppingPrice = 1.00;
